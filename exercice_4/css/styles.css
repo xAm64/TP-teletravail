@@ -179,6 +179,11 @@ body {
 	#content img {width: 100%}
 	.randomFilmImage {width: 40%;
 	text-align: center}
+	
+	#topImage{
+		height:280px;
+		background: url(../images/hollywood_1000.jpg) no-repeat center;
+	}
 }
 
 @media screen and (max-width: 480px){
