@@ -103,22 +103,9 @@
 		margin-top:10px;
 	}
 	
-	
-	body {
-		width: 90%;
-		margin: 0 auto;
-		min-width: 1000px;
-		max-width: 1280px;
-	}
-	
 	#mainHeader{
 		height:80px;
 		background:#218e8e;
-	}
-	
-	#topImage{
-		height:280px;
-		background: url(../images/hollywood_1280.jpg) no-repeat center;
 	}
 		
 	#mainNav{
@@ -126,16 +113,14 @@
 		background:#ed9837;
 	}
 	
-	#content{
-		display:block;  /* necessaire pour l'effet faux columns */
-		background:#f6b468;
-		overflow: hidden; /* necessaire pour l'effet faux columns */
-	}
 	
-	#films{
-		float:left;
-		width: 73%;
-		background:#ffffff;
+@media screen and (min-width: 1024px){
+	#pageFooter{
+		width: 98%;
+		clear:both;
+		height:40px;
+		background:#218e8e;
+		color:white;
 	}
 	
 	#related{
@@ -144,18 +129,44 @@
 		background:#f6b468;
 	}
 	
-	#pageFooter{
-		width: 98%;
-		clear:both;
-		height:40px;
-		background:#218e8e;
-		color:white;
+	#topImage{
+		height:280px;
+		background: url(../images/hollywood_1280.jpg) no-repeat center;
 	}
+body {
+		width: 90%;
+		margin: 0 auto;
+		min-width: 1000px;
+		max-width: 1280px;
+		background : #020;
+	}
+
+#films{
+		float:left;
+		width: 73%;
+		background:#ffffff;
+	}
+	
+	#content{
+		display:block;  /* necessaire pour l'effet faux columns */
+		background:#f6b468;
+		overflow: hidden; /* necessaire pour l'effet faux columns */
+		width: 100%;
+	}
+}
+
+	
+	
 @media screen and (max-width: 1023px){
 	body {width : 100%}
 	mainHeader, mainNav {text-align: center}
 	
-	aside {display: none}
+	#content{
+		display:block;  /* necessaire pour l'effet faux columns */
+		background:#fff;
+		overflow: hidden; /* necessaire pour l'effet faux columns */
+		width: 100%;
+	}
 }	
 	
 @media screen and (min-width: 481px)	 and (max-width: 1023px){
@@ -163,10 +174,14 @@
 		width: 100%; height: auto;
 		background: url(../images/hollywood_1280.jpg) no-repeat center;
 	}
+	
+	#content .filmImage {width: 50%}
+	#content img {width: 100%}
 }
 
 @media screen and (max-width: 480px){
 	#topImage, #mainHeader hgroup h2 {display: none}
 	
 	#films {width: 98%}
+	#content img {width: 100%}
 }
