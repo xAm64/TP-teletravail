@@ -108,10 +108,6 @@
 		background:#218e8e;
 	}
 		
-	#mainNav{
-		height:40px;
-		background:#ed9837;
-	}
 	
 	
 @media screen and (min-width: 1024px){
@@ -153,6 +149,16 @@ body {
 		overflow: hidden; /* necessaire pour l'effet faux columns */
 		width: 100%;
 	}
+	
+	.filmImage {max-width: 45%}
+	.filmImage img {max-width: 100%}
+	
+	.randomFilmImage img {max-width: 100%}
+	
+	#mainNav{
+		height:40px;
+		background:#ed9837;
+	}
 }
 
 	
@@ -167,13 +173,11 @@ body {
 		overflow: hidden; /* necessaire pour l'effet faux columns */
 		width: 100%;
 	}
+	
+	.video iframe {max-width: 100%; height: auto}
 }	
 	
 @media screen and (min-width: 481px)	 and (max-width: 1023px){
-	#topImage{
-		width: 100%; height: auto;
-		background: url(../images/hollywood_1280.jpg) no-repeat center;
-	}
 	
 	#content .filmImage {width: 50%}
 	#content img {width: 100%}
@@ -184,6 +188,12 @@ body {
 		height:280px;
 		background: url(../images/hollywood_1000.jpg) no-repeat center;
 	}
+	
+	#mainNav{
+		height:40px;
+		background:#ed9837;
+	}
+	
 }
 
 @media screen and (max-width: 480px){
@@ -191,4 +201,9 @@ body {
 	
 	#films {width: 98%}
 	#content img {width: 60%}
+	#mainNav ul li, #social ul li{display:block}
+	#mainNav{
+		height:80px;
+		background:#ed9837;
+	}
 }
