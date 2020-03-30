@@ -1,0 +1,8 @@
+body {background:#020; color:#9f9}
+
+.menu-principal {background: #332; color:#ba9;
+border-radius: 20px 20px 0 0; border: 1px solid #776}
+.menu-principal a {background:#234; color:#bc9;
+border: 1px solid #5aa}
+.menu-principal a:hover {background: #311; color:#f66;
+border: 1px solid #a82}
