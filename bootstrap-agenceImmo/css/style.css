@@ -1,8 +1,16 @@
 body {background:#020; color:#9f9}
+h1 {text-align: center;
+color: #484}
 
-.menu-principal {background: #332; color:#ba9;
-border-radius: 20px 20px 0 0; border: 1px solid #776}
+.menu-principal {background: #DFDDDE; color:#234;
+border-radius: 14px 14px 0 0}
 .menu-principal a {background:#234; color:#bc9;
 border: 1px solid #5aa}
 .menu-principal a:hover {background: #311; color:#f66;
 border: 1px solid #a82}
+
+.image-deco {background: url("../images/imgTitre.jpg") no-repeat; background-size: cover;
+height: 400px;}
+
+.jumbotron {background: #5556; color:#cda}
+.jumbotron:hover {background: #444A; color:#ff8}
