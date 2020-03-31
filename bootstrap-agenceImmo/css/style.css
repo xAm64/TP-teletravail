@@ -1,4 +1,5 @@
-body {background:#020; color:#9f9}
+body {background:#020 url("../images/fond.jpg") center; background-size: cover;
+color:#9f9}
 h1 {text-align: center;
 color: #484}
 

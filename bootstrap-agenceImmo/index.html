@@ -14,6 +14,7 @@
 </head>
 <body>
 	<h1 class="h5">Exercice projet imobilier</h1>
+	<!-- Menu principal -->
 	<div class="container menu-principal mt-2 nav">
 	<h2 class="h4">menu</h2>
 		<ul class="nav nav-pills">
@@ -24,6 +25,7 @@
 			<li class="nav-item"><a class="nav-link" href="#">Vente</a></li>
 		</ul>
 	</div>
+	<!-- Image principale + contenue -->
 	<main class="container image-deco">
 		<div class="jumbotron">
 			<h2>Mon projet immobilier</h2>
@@ -31,7 +33,8 @@
 			<a class="btn btn-secondary btn-lg " href="#" role="button">En savoir plus</a>
 		</div>
 	</main>
-	<div class="container">
+	<!-- Corps du site -->
+	<div class="container" style="background: #DFDDDE; color: #020">
 		<div class="row">
 			<article class="col-12">Main menu</article>
 		</div>
@@ -41,10 +44,58 @@
 			<!-- fin de partie gauche -->
 			<!-- partie droite début -->
 			<div class="col-8">
-				<img src="images/couvert2.jpg" alt="abris ouvert">
-				<img src="images/choix_abrisV2.jpg" alt="abris fermé">
+				<!-- Type d'abris -->
+				<a href="#" class="btn btn-secondary"><img src="images/couvert2.jpg" alt="abris ouvert">Ouvert</a>
+				<a href="#" class="btn btn-secondary"><img src="images/choix_abrisV2.jpg" alt="abris fermé">Fermer</a><br>
+				<!-- Date -->
+				<button class="btn btn-secondary mt-2">Date début</button> <input type="date"></input><br>
+				<!-- Type de véhicule -->
+				<button class="btn btn-secondary my-2">Caravane</button>
+				<button class="btn btn-secondary my-2">Camping car</button>
+				<button class="btn btn-secondary my-2">Bateau</button>
+				<button class="btn btn-secondary my-2">Autres</button>
+				<br>
+				<!-- Raccordement -->
+				<div>
+					<ul class="nav">
+						<li class="form-check form-check-inline mx-2">
+							<label class="form-check-label">
+								<input type="checkbox" name="Raccord" value="Elect" class="form-check-input">Raccordement éléctricité</input>
+							</label></li>
+							<li class="form-check form-check-inline mx-2">
+							<label class="form-check-label">
+								<input type="checkbox" name="Raccord" value="Eau" class="form-check-input">Raccordement eau</input>
+							</label></li>
+							<li class="form-check form-check-inline mx-2">
+							<label class="form-check-label">
+								<input type="checkbox" name="Raccord" value="Net" class="form-check-input">Accès internet</input>
+							</label></li>
+					</ul>
+					<br>
+					<!-- Longueur -->
+					<div class="form-group">
+						<p>Longueur du véhicule</p>
+						<div class="form-check form-check-inline">
+							<label class="form-check-label">
+								<input type="radio" name="longueur" value="-6" class="form-check-input">6m ou moins</input>
+							</label>
+						</div>
+						<div class="form-check form-check-inline">
+							<label class="form-check-label">
+								<input type="radio" name="longueur" value="+6" class="form-check-input">Plus de 6m</input>
+							</label>
+						</div>
+					</div>
+					<!-- verifié disponibilitée -->
+					<button class="btn btn-secondary mx-2">Vérifier la disponibilitée</button>
+				</div>
 			</div>
 			<!-- fin de partie droite -->
+		</div>
+		<div class="row">
+			<div class="col-12">
+				<p>Article</p>
+			</div>
 		</div>
 	</div>
 	<!-- Optional JavaScript --> 
