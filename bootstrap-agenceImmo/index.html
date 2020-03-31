@@ -15,16 +15,21 @@
 <body>
 	<h1 class="h5">Exercice projet imobilier</h1>
 	<!-- Menu principal -->
-	<div class="container menu-principal mt-2 nav">
-	<h2 class="h4">menu</h2>
-		<ul class="nav nav-pills">
-			<li class="nav-item"><a class="nav-link" href="#">Accueil</a></li>
-			<li class="nav-item"><a class="nav-link" href="#">Qui sommes nous ?</a></li>
-			<li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
-			<li class="nav-item"><a class="nav-link" href="#">Achat</a></li>
-			<li class="nav-item"><a class="nav-link" href="#">Vente</a></li>
-		</ul>
-	</div>
+	<header class="navbar navbar-expand-md container navbar-dark menu-principal mt-2">
+	<a href="#"><h2 class="h4 navbar-brand">Logo</h2></a>
+		<button class="navbar-toggler" data-toggle="collapse" data-target="collapse-1"><span class="navbar-toggler-icon">֎</span></button>
+		<div class="collapse navbar-collapse" id="collapse-1">
+		<nav>
+			<ul class="navbar-nav">
+				<li class="nav-item"><a class="nav-link" href="#">Accueil</a></li>
+				<li class="nav-item"><a class="nav-link" href="#">Qui sommes nous ?</a></li>
+				<li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+				<li class="nav-item"><a class="nav-link" href="#">Achat</a></li>
+				<li class="nav-item"><a class="nav-link" href="#">Vente</a></li>
+			</ul>
+		</nav>
+		</div>
+	</header>
 	<!-- Image principale + contenue -->
 	<main class="container image-deco">
 		<div class="jumbotron">
@@ -45,7 +50,7 @@
 			<!-- partie droite début -->
 			<div class="col-8">
 				<!-- Type d'abris -->
-				<a href="#" class="btn btn-secondary"><img src="images/couvert2.jpg" alt="abris ouvert">Ouvert</a>
+				<a href="#" class="btn btn-secondary "><img src="images/couvert2.jpg" alt="abris ouvert">Ouvert</a>
 				<a href="#" class="btn btn-secondary"><img src="images/choix_abrisV2.jpg" alt="abris fermé">Fermer</a><br>
 				<!-- Date -->
 				<button class="btn btn-secondary mt-2">Date début</button> <input type="date"></input><br>
@@ -100,8 +105,7 @@
 	</div>
 	<!-- Optional JavaScript --> 
     <!-- jQuery first, then Popper.js, then Bootstrap JS --> 
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script> 
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script> 
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script> 
+    <script src="../js/jquery-3.2.1.js"></script>
+	<script src="../js/bootstrap.bundle.min.js"></script>
  </body>
 </html>

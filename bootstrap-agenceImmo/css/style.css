@@ -5,9 +5,9 @@ color: #484}
 
 .menu-principal {background: #DFDDDE; color:#234;
 border-radius: 14px 14px 0 0}
-.menu-principal a {background:#234; color:#bc9;
+.nav-item a {background:#234; color:#bc9;
 border: 1px solid #5aa}
-.menu-principal a:hover {background: #311; color:#f66;
+.nav-item a:hover {background: #311; color:#f66;
 border: 1px solid #a82}
 
 .image-deco {background: url("../images/imgTitre.jpg") no-repeat; background-size: cover;
