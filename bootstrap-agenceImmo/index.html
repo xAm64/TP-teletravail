@@ -17,10 +17,10 @@
 	<!-- Menu principal -->
 	<header class="navbar navbar-expand-md container navbar-dark menu-principal mt-2">
 	<a href="#"><h2 class="h4 navbar-brand">Logo</h2></a>
-		<button class="navbar-toggler" data-toggle="collapse" data-target="collapse-1"><span class="navbar-toggler-icon">֎</span></button>
-		<div class="collapse navbar-collapse" id="collapse-1">
+		<button class="navbar-toggler" tupe="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon" style="color:#020">֎</span></button>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
 		<nav>
-			<ul class="navbar-nav">
+			<ul class="navbar-nav mr-auto">
 				<li class="nav-item"><a class="nav-link" href="#">Accueil</a></li>
 				<li class="nav-item"><a class="nav-link" href="#">Qui sommes nous ?</a></li>
 				<li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
@@ -45,15 +45,15 @@
 		</div>
 		<div class="row">
 			<!-- partie gauche début -->
-			<div class="col-4">Menu</div>
+			<div class="col-md-4 col-12">Menu</div>
 			<!-- fin de partie gauche -->
 			<!-- partie droite début -->
-			<div class="col-8">
+			<div class="col-md-8 col-12">
 				<!-- Type d'abris -->
-				<a href="#" class="btn btn-secondary "><img src="images/couvert2.jpg" alt="abris ouvert">Ouvert</a>
-				<a href="#" class="btn btn-secondary"><img src="images/choix_abrisV2.jpg" alt="abris fermé">Fermer</a><br>
+				<a href="#" class="btn btn-secondary "><img src="images/couvert2.jpg" alt="abris ouvert">sous toit</a>
+				<a href="#" class="btn btn-secondary"><img src="images/choix_abrisV2.jpg" alt="abris fermé">hangar fermer</a><br>
 				<!-- Date -->
-				<button class="btn btn-secondary mt-2">Date début</button> <input type="date"></input><br>
+				<button class="btn btn-secondary mt-2">Date début</button> <input type="date"></input><button class="btn btn-secondary mt-2">Date de fin</button> <input type="date"></input><br>
 				<!-- Type de véhicule -->
 				<button class="btn btn-secondary my-2">Caravane</button>
 				<button class="btn btn-secondary my-2">Camping car</button>
@@ -79,7 +79,7 @@
 					<br>
 					<!-- Longueur -->
 					<div class="form-group">
-						<p>Longueur du véhicule</p>
+						<p>Type de place souhaité</p>
 						<div class="form-check form-check-inline">
 							<label class="form-check-label">
 								<input type="radio" name="longueur" value="-6" class="form-check-input">6m ou moins</input>
@@ -89,6 +89,30 @@
 							<label class="form-check-label">
 								<input type="radio" name="longueur" value="+6" class="form-check-input">Plus de 6m</input>
 							</label>
+						</div>
+					</div>
+					<!-- formulaire -->
+					<div class="form-group">
+						<legend>Informations personnels</legend>
+						<div class="form-group row px-3">
+							<label for="nom" class="d-none d-md-block col-12 col-md-4">Votre nom *</label>
+							<input type="text" name="Nom" id="nom" class="form-control col-12 col-md-8" placeholder="Nom"></input>
+						</div>
+						<div class="form-group row px-3">
+							<label for="prenom" class="d-none d-md-block col-12 col-md-4">Votre prénom *</label>
+							<input type="text" name="Prenom" id="prenom" class="form-control col-12 col-md-8" placeholder="Prénom"></input>
+						</div>
+						<div class="form-group row px-3">
+							<label for="mail" class="d-none d-md-block col-12 col-md-4">Adresse e-mail *</label>
+							<input type="email" name="Mail" id="mail" class="form-control col-12 col-md-8" placeholder="monmail@email.com"></input>
+						</div>
+						<div class="form-group row px-3">
+							<label for="Name" class="d-none d-md-block col-12 col-md-4">Télephone *</label>
+							<input type="tel" name="Tel" id="tel" class="form-control col-12 col-md-8" placeholder="01 02 03 04 05"></input>
+						</div>
+						<div class="form-group row px-3">
+							<label for="commentaires" class="d-none d-md-block col-12 col-md-4">Commentaires</label>
+							<input type="textarea" rows="4" cols="50" name="Commentaires" id="commentaires" class="form-control col-12 col-md-8" placeholder="Commentaires"></input>
 						</div>
 					</div>
 					<!-- verifié disponibilitée -->
@@ -106,6 +130,8 @@
 	<!-- Optional JavaScript --> 
     <!-- jQuery first, then Popper.js, then Bootstrap JS --> 
     <script src="../js/jquery-3.2.1.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="../js/bootstrap.bundle.min.js"></script>
+	<script src="../js/bootstrap.js"></script>
  </body>
 </html>
