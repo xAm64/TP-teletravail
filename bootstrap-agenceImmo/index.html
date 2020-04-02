@@ -3,6 +3,7 @@
 <head>
 	<meta charset="utf-8" />
 	<title>Exercice agence immo</title>
+	<meta name="viewport" contant="width=device-width, initial-scale=1">
 	<meta name="Author" content="Manex"/>
 	<meta name="Keywords" content="exercice" />
 	<meta name="Description" content="Exercice boostrap1 faire un menu" />
@@ -18,8 +19,8 @@
 	<header class="container menu-principal">
 		<nav class="navbar navbar-expand-md navbar-dark">
 		<a href="#"><h2 class="h4 navbar-brand">Logo</h2></a>
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon" style="color:#020">֎</span></button>
-			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#monMenu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="color: #111">֎</button>
+			<div class="collapse navbar-collapse" id="monMenu">
 				<ul class="navbar-nav mr-auto">
 					<li class="nav-item"><a class="nav-link" href="#">Accueil</a></li>
 					<li class="nav-item"><a class="nav-link" href="#">Qui sommes nous ?</a></li>
@@ -51,16 +52,23 @@
 			<div class="col-md-8 col-12">
 				<!-- Type d'abris -->
 				<div class="row">
-				<a href="#" class="btn btn-secondary col-12 col-md-6"><img src="images/couvert2.jpg" alt="abris ouvert">sous toit</a>
-				<a href="#" class="btn btn-secondary col-12 col-md-6"><img src="images/choix_abrisV2.jpg" alt="abris fermé">hangar fermer</a></div><br>
+					<div class="col-12 col-lg-6">
+						<a href="#" class="btn btn-secondary"><img src="images/couvert2.jpg" alt="abris ouvert"><br>sous toit</a>
+					</div>
+					<div class="col-12 col-lg-6">
+					<a href="#" class="btn btn-secondary"><img src="images/choix_abrisV2.jpg" alt="abris fermé"><br>hangar fermer</a>
+					</div>
+				</div><br>
 				<!-- Date -->
 				<div class="row">
 				<button class="btn btn-secondary mt-2 col-12 col-md-6">Date début</button> <input type="date"></input><button class="btn btn-secondary mt-2 col-12 col-md-6">Date de fin</button> <input type="date"></input></div><br>
 				<!-- Type de véhicule -->
-				<button class="btn btn-secondary my-2">Caravane</button>
-				<button class="btn btn-secondary my-2">Camping car</button>
-				<button class="btn btn-secondary my-2">Bateau</button>
-				<button class="btn btn-secondary my-2">Autres</button>
+				<div class="row">
+					<button class="btn btn-secondary col-6 col-md-3"><a href="#" class="vehicule"><img src="images/caravane.jpg" alt="Caravane"><br>Caravane</a></button>
+					<button class="btn btn-secondary col-6 col-md-3"><a href="#" class="vehicule"><img src="images/C-car.jpg" alt="Camping car"><br>Camping car</a></button>
+					<button class="btn btn-secondary col-6 col-md-3"><a href="#" class="vehicule"><img src="images/bateau.jpg" alt="Bateau"><br>Bateau</a></button>
+					<button class="btn btn-secondary col-6 col-md-3"><a href="#" class="vehicule"><img src="images/autre.png" alt="autres"><br>Autres</a></button>
+				</div>
 				<br>
 				<!-- Raccordement -->
 				<div>
@@ -114,7 +122,7 @@
 						</div>
 						<div class="form-group row px-3">
 							<label for="commentaires" class="d-none d-md-block col-12 col-md-4">Commentaires</label>
-							<input type="textarea" rows="4" cols="50" name="Commentaires" id="commentaires" class="form-control col-12 col-md-8" placeholder="Commentaires"></input>
+							<input type="textarea" rows="3" name="Commentaires" id="commentaires" class="form-control col-12 col-md-8" placeholder="Commentaires"></input>
 						</div>
 					</div>
 					<!-- verifié disponibilitée -->
@@ -131,9 +139,7 @@
 	</div>
 	<!-- Optional JavaScript --> 
     <!-- jQuery first, then Popper.js, then Bootstrap JS --> 
-    <script src="../js/jquery-3.2.1.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-	<script src="../js/bootstrap.bundle.min.js"></script>
-	<script src="../js/bootstrap.js"></script>
+    <script src="js/jquery-3.2.1.js"></script>
+	<script src="js/bootstrap.bundle.min.js"></script>
  </body>
 </html>
