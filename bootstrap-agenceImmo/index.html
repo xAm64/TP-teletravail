@@ -51,40 +51,91 @@
 			<!-- partie droite début -->
 			<div class="col-md-8 col-12">
 				<!-- Type d'abris -->
+				<span class="cSelect Rcache">
 				<div class="row">
-					<div class="col-12 col-lg-6">
-						<a href="#" class="btn btn-secondary maCouleur"><img src="images/couvert2.jpg" alt="abris ouvert"><br>sous toit</a>
+					<div class="col-12 col-lg-4">
+						<input name="stockage" type="radio" value="toit" id="s-toit" checked>
+						<label for="s-toit" class="option1">
+							<img class="img_tarif img-fluid" src="images/couvert2.jpg" alt="abris ouvert"><br><p class="text-center">sous toit</p>
+							<div class="icon-validation"></div>
+						</label>
 					</div>
-					<div class="col-12 col-lg-6">
-					<a href="#" class="btn btn-secondary maCouleur"><img src="images/choix_abrisV2.jpg" alt="abris fermé"><br>hangar fermer</a>
+					<div class="col-12 col-lg-4">
+					<input name="stockage" type="radio" value="abris" id="s-abris">
+					<label for="s-abris" class="option1">
+						<img class="img_tarif img-fluid" src="images/choix_abrisV2.jpg" alt="abris fermé">
+						<br><p class="text-center">hangar fermer</p>
+						<div class="icon-validation"></div>
+					</label>
 					</div>
-				</div><br>
+					<div class="col-12 col-lg-4">
+					<input name="stockage" type="radio" value="abris" id="s-rien">
+					<label for="s-rien" class="option1">
+						<img class="img_tarif img-fluid" src="images/rien.jpg" alt="sans abris">
+						<br><p class="text-center">Plein air</p>
+						<div class="icon-validation"></div>
+					</label>
+					</div>
+				</div>
+				</span><br>
 				<!-- Date -->
 				<div class="row">
 				<button class="btn btn-secondary mt-2 col-12 col-md-6">Date de début</button> <input type="date"></input><button class="btn btn-secondary mt-2 col-12 col-md-6">Date de fin</button> <input type="date"></input></div><br>
 				<!-- Type de véhicule -->
+				<span class="cSelect Rcache">
 				<div class="row">
-					<button class="btn btn-secondary col-6 col-md-3"><a href="#" class="maCouleur"><img src="images/caravane.jpg" alt="Caravane"><br>Caravane</a></button>
-					<button class="btn btn-secondary col-6 col-md-3"><a href="#" class="maCouleur"><img src="images/C-car.jpg" alt="Camping car"><br>Camping car</a></button>
-					<button class="btn btn-secondary col-6 col-md-3"><a href="#" class="maCouleur"><img src="images/bateau.jpg" alt="Bateau"><br>Bateau</a></button>
-					<button class="btn btn-secondary col-6 col-md-3"><a href="#" class="maCouleur"><img src="images/autre.png" alt="autres"><br>Autres</a></button>
+					<div class="btn col-6 col-md-3">
+					<input name="vehicule" type="radio" value="caravane" id="vCaravane" ckecked>
+					<label for="vCaravane" class="option1">
+						<img src="images/caravane.jpg" alt="Caravane">
+						<br><p class="text-center">Caravane</p>
+						<div class="icon-validation"></div>
+					</label></div>
+					<div class="btn col-6 col-md-3">
+					<input name="vehicule" type="radio" value="cmpCar" id="vCCar">
+					<label for="vCCar" class="option1">
+						<img src="images/C-car.jpg" alt="Camping car">
+						<br><p class="text-center">Camping car</p>
+						<div class="icon-validation"></div>
+					</label></div>
+					<div class="btn col-6 col-md-3">
+					<input name="vehicule" type="radio" value="bateau" id="vBateau">
+					<label for="vBateau" class="option1">
+						<img src="images/bateau.jpg" alt="Bateau">
+						<br><p class="text-center">Bateau</p>
+						<div class="icon-validation"></div>
+					</label></div>
+					<div class="btn col-6 col-md-3">
+					<input name="vehicule" type="radio" value="autre" id="vAutre">
+					<label for="vAutre" class="option1">
+						<img src="images/autre.png" alt="autres">
+						<br><p class="text-center">Autres</p>
+						<div class="icon-validation"></div>
+					</label></div>
 				</div>
+				</span>
 				<br>
 				<!-- Raccordement -->
-				<div">
+				<div>
 					<ul class="nav row">
 						<li class="form-check form-check-inline col-12 col-lg-4">
-							<label class="form-check-label">
-								<input type="checkbox" name="Raccord" value="Elect" class="form-check-input ">Raccordement éléctricité</input>
-							</label></li>
-							<li class="form-check form-check-inline col-12 col-lg-4">
-							<label class="form-check-label">
-								<input type="checkbox" name="Raccord" value="Eau" class="form-check-input">Raccordement eau</input>
-							</label></li>
-							<li class="form-check form-check-inline col-12 col-lg-3">
-							<label class="form-check-label">
-								<input type="checkbox" name="Raccord" value="Net" class="form-check-input">Accès internet</input>
-							</label></li>
+							<div class="checkbox checkbox-success">
+								<input id="checkboxElect" type="checkbox" class="styled" name="Raccord" value="Elect" class="form-check-input">
+								<label for="checkboxElect">Raccordement éléctricité</label>
+							</div>
+						</li>
+						<li class="form-check form-check-inline col-12 col-lg-4">
+							<div class="checkbox checkbox-success">
+								<input id="checkboxEau" type="checkbox" class="styled" name="Raccord" value="Eau" class="form-check-input">
+								<label for="checkboxEau">Raccordement eau</label>
+							</div>
+						</li>
+						<li class="form-check form-check-inline col-12 col-lg-3">
+							<div class="checkbox checkbox-success">
+								<input id="checkboxNet" type="checkbox" class="styled" name="Raccord" value="Net" class="form-check-input">
+								<label for="checkboxNet">Accès internet</label>
+							</div>
+						</li>
 					</ul>
 					<br>
 					<!-- Longueur -->
